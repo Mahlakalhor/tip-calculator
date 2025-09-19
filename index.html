@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="./output.css">
 
 </head>
-<body class="h-screen p-16 bg-[#f2f2f2] flex flex-col justify-center items-center">
-    <main class="h-full">
-        <section class="flex flex-col bg-[#ffffff] p-8 rounded-2xl ">
+<body class="h-screen bg-[#f2f2f2] flex justify-center items-center">
+    <main>
+        <section class="flex flex-col bg-[#ffffff] p-8 rounded-2xl gap-5 shadow-lg" >
             <span class="text-center text-3xl font-bold">Tip Calculator</span>
             <p class="text-base">Enter the bill amount and tip percentage to calculate the total.</p>
+            
             <label for="bill">Bill amount: </label>
-            <input id="bill" type="number class" class="border-1 rounded-3xl border-gray-400 ">
-            <label for="bill">Tip percentage:  </label>
-            <input id="bill" type="number class" class="border-1 rounded-3xl border-gray-400 ">            
-            <button class="bg-green-600 p-1">calculate</button>
-            <p>total: <span id=""></span></p>
+            <input id="bill" type="number" class="border rounded-3xl border-gray-400 p-2">
+            
+            <label for="tip">Tip percentage: </label>
+            <input id="tip" type="number" class="border rounded-3xl border-gray-400 p-2">            
+            
+            <button class="bg-green-600 hover:bg-green-700 text-white rounded-lg px-4 py-2 transition" id="calculate">Calculate</button>
+
+            <p>Total: <span id="total"></span></p>
         </section>
     </main>
-    <script></script>
-
+    <script src="./script.js"></script>
 </body>
 </html>
