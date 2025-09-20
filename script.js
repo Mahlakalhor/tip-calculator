@@ -4,6 +4,9 @@ const calculateEl = document.getElementById("calculate");
 const totalEl = document.getElementById("total");
 
 calculateEl.addEventListener("click",()=>{
-    const sum = Number(billEl.value) + Number(tipEl.value);
-    totalEl.innerText= sum ;
-})
+    const bill = Number(billEl.value);
+    const tip = Number(tipEl.value);
+
+    const total = bill + (bill * tip / 100);
+    totalEl.innerText = total ;
+});
